@@ -107,13 +107,13 @@ def animate(_):
     w = []
     robot = robot.move(0.1, 1)
     Z = robot.sense()
-    robot_dot.set_data(robot.x, robot.y)
+    robot_dot.set_data([robot.x], [robot.y])
 
     for i in range(N):
         p = particles[i].move(0.1, 1)
         particles[i] = p
         weights[i] = p.measurement_prob(Z)
-        particle_dots[i][0].set_data(p.x, p.y)
+        particle_dots[i][0].set_data([p.x], [p.y])
     norm = sum(weights)
     weights = [w/norm for w in weights]
     particles = resample(particles, weights)

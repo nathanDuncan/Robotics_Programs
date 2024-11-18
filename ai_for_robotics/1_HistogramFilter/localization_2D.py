@@ -74,8 +74,8 @@ def animate(_):
     smallest = min(min(row) for row in p)
     largest = max(max(row) for row in p)
     grid.set_clim(vmin=0, vmax=largest)
-    line.set_xdata(j)
-    line.set_ydata(i)
+    line.set_xdata([j])
+    line.set_ydata([i])
     return grid, line,
 
 anim = animation.FuncAnimation(fig, animate, 300, interval=50)

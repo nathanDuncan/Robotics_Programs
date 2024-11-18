@@ -81,7 +81,7 @@ def animate(i):
     smallest = min(min(row) for row in f)
     largest = max(max(row) for row in f)
     grid.set_clim(vmin=0, vmax=1)
-    dot.set_data(measurements[i, 0, :2])
+    dot.set_data([measurements[i, 0, 0]], [measurements[i, 0, 1]])
     return grid, dot,
 
 def init():

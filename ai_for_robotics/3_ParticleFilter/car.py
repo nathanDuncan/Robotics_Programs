@@ -237,7 +237,7 @@ def animate(frame):
         p = particles[j].move(turn, forward)
         particles[j] = p
         weights[j] = p.measurement_prob(Z)
-        particle_dots[j][0].set_data(p.x, p.y)
+        particle_dots[j][0].set_data([p.x], [p.y])
     norm = sum(weights)
     # weights = [w/norm for w in weights]
     particles = resample(particles, weights)
