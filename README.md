@@ -7,3 +7,6 @@ by Sebastian Thrun. These visualizations of the topics were first created by [da
 
 ## Python Robotics
 These open-source lessons were first compiled by Atsushi Sakai at [Python Robotics](https://atsushisakai.github.io/PythonRobotics/).
+
+## License Plate Recognition
+Simple Machine Vision project based on the tutorial [Developing a License Plate Recognition System with Machine Learning in Python](https://medium.com/devcenter/developing-a-license-plate-recognition-system-with-machine-learning-in-python-787833569ccd) by Femi Oladeji.
